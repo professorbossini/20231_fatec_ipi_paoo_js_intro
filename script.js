@@ -1,10 +1,25 @@
+//inválido: return somente se a função tiver {}
+//const quadrado = (n) => return n * n
+const quadrado = (n) => {return n * n}
+// const dobro = (n) => 2 * n
+console.log(quadrado(2))
+
+// const hello = () => console.log("Hello")
+// hello()
+
+// console.log(dobro(2))
+
+// const f = nome => console.log("Oi, " + nome)
+// f("Ana")
+
+
 //functions(antigas) e arrow functions(mais modernas)
 
-const triplo = function (n = 5){
-  return 3 * n
-}
-console.log(triplo(10))
-console.log(triplo())
+// const triplo = function (n = 5){
+//   return 3 * n
+// }
+// console.log(triplo(10))
+// console.log(triplo())
 
 // const dobro = function(n){
 //   return 2 * n
