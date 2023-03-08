@@ -1,10 +1,24 @@
-const nomes = ["Ana Maria", "Antônio", "Rodrigo", "Alex", "Cristina"]
+const numeros = [1, 2, 3, 4, 5]
+//função reduce
+const soma = numeros.reduce((ac, v) => {return ac + v})
+console.log(soma)
+
+
+// const resultado = numeros.every((n) => {return n % 2 === 0})
+// console.log(resultado)
+//usando a every, verificar se todos os elementos são pares
+
+
+// const nomes = ["Ana Maria", "Antônio", "Rodrigo", "Alex", "Cristina"]
+// const todosComecamComA = nomes.every((n) => {return n.startsWith("A")})
+// console.log(todosComecamComA)
 //[A, A, R, A, C]
 //map
 
-const numeros = [1, 2, 3, 4, 5]
-//[1, 4, 9, 16, 25]
-const resultado = 
+// const numeros = [1, 2, 3, 4, 5]
+// //[1, 4, 9, 16, 25]
+// const resultado = numeros.map((elemento) => {return elemento * elemento})
+// console.log(resultado)
 // const iniciais = nomes.map((elemento) => {return elemento.charAt(0)})
 // console.log(iniciais)
 
