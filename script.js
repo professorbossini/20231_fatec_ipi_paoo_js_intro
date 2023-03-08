@@ -1,7 +1,44 @@
-const numeros = [1, 2, 3, 4, 5]
-//função reduce
-const soma = numeros.reduce((ac, v) => {return ac + v})
-console.log(soma)
+//functions(antigas) e arrow functions(mais modernas)
+
+const triplo = function (n = 5){
+  return 3 * n
+}
+console.log(triplo(10))
+console.log(triplo())
+
+// const dobro = function(n){
+//   return 2 * n
+// }
+// const res = dobro(3)
+// console.log(res)
+
+// function soma (a, b){
+//   return a + b
+// }
+// const res = soma(2, 3)
+// console.log(res)
+
+// function hello(){
+//   console.log("Oi")
+// }
+// hello(undefined)
+
+// function hello(nome){
+//   console.log("Oi, " + nome)
+// }
+// hello("João")
+
+
+
+// int soma(int a, int b){
+//   return a + b;
+// }
+
+
+// const numeros = [1, 2, 3, 4, 5]
+// //função reduce
+// const soma = numeros.reduce((ac, v) => {return ac + v})
+// console.log(soma)
 
 
 // const resultado = numeros.every((n) => {return n % 2 === 0})
