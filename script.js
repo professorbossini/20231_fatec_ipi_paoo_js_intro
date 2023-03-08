@@ -1,8 +1,110 @@
+//closure
+function eAgora(){
+  let cont = 1
+  function f1(){
+    console.log(cont)
+  }
+  cont++
+  function f2(){
+    console.log(cont)
+  }
+  return {f1, f2}
+}
+let eAgoraResult = eAgora()
+eAgoraResult.f1()
+eAgoraResult.f2()
+
+
+//Olá, Pedro
+//Adeus, Maria
+// function saudacoesFactory(saudacao, nome){
+//   return function(){
+//     console.log(saudacao + ", " + nome)
+//   }
+// }
+
+// let olaAna = saudacoesFactory("Olá", "Ana")
+// let tchauAna = saudacoesFactory("Tchau", "Ana")
+
+// olaAna()
+// tchauAna()
+
+
+// function ola(){
+//   let nome = "Pedro"
+//   return function(){
+//     console.log("Olá, " + nome)
+//   }
+// }
+
+// let olaResult = ola()
+// olaResult()
+
+
+// function f (){
+//   let nome = "Pedro"
+//   function g(){
+//     let teste
+//     console.log(nome)
+//   }
+//   g()
+// }
+// f()
+
+
+// let oi = () => {}
+// //função de alta ordem
+// function f (funcao){
+//   return funcao()
+// }
+
+// //função de alta ordem
+// function g(){
+//   function outraFuncao(){
+//     console.log("Fui criada por g")
+//     return function(){
+//       console.log("Até logo")
+//     }
+//   }
+//   return outraFuncao
+// }
+// f(g)()()
+
+// f(g())
+
+// f(g)()
+
+// let umaFuncao = function(){
+//   console.log("Fui armazenada em uma variável")
+// }
+// umaFuncao()
+
+
+
+// f(function(){
+  //   console.log("Estou sendo passada para f")
+  // })
+
+
+
+// const gResult = g()
+// gResult()
+
+// g()()
+
+
+// class Gato{
+//   public void miar(){
+
+//   }
+//   var teste = miar;
+// }
+
 //inválido: return somente se a função tiver {}
 //const quadrado = (n) => return n * n
-const quadrado = (n) => {return n * n}
-// const dobro = (n) => 2 * n
-console.log(quadrado(2))
+// const quadrado = (n) => {return n * n}
+// // const dobro = (n) => 2 * n
+// console.log(quadrado(2))
 
 // const hello = () => console.log("Hello")
 // hello()
