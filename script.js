@@ -1,11 +1,67 @@
-let calculadora = {
-  soma: (a, b) => a + b,
-  subtracao: function(a, b){
-    return a - b
-  }
-}
-console.log(calculadora.soma(2, 3))
-console.log(calculadora['subtracao'](5, 2))
+// const fs = require ('fs')
+// const abrirArquivo = function (nomeArquivo){
+//   const exibirConteudo = function(erro, conteudo){
+//     if(erro)
+//       console.log('Deu erro: ' + erro)
+//     else{
+//       console.log(conteudo.toString())
+//       const dobro = Number(conteudo.toString()) * 2;
+//       const finalizar = function(erro){
+//         console.log(erro ? "Deu erro: " + erro : "Tudo ok")
+//       }
+//       fs.writeFile('dobro.txt', dobro.toString(), finalizar)
+//     }
+//   }
+//   fs.readFile(nomeArquivo, exibirConteudo)
+// }
+
+// abrirArquivo("arquivo.txt")
+//abrir o arquivo
+//ler o arquivo
+//exibir o conteúdo
+
+
+// function demorada(){
+//   const dataNoFuturo = new Date().getTime() + 12000
+//   while(new Date().getTime() <= dataNoFuturo);//no-op
+//   const d = 8 + 4
+//   return d
+// }
+
+// const a = 2 + 3
+// const b = 5 + 9
+// const d = demorada()
+
+
+
+
+// setTimeout(function(){
+//   const d = demorada()
+//   console.log('d: ' + d)
+// }, 0)
+
+// const e = 2 + a + b
+// console.log('e:' + e)
+
+// const a = 2 + 7
+// const b = 5
+// // só faz sentido depois das linhas 1 e 2
+// console.log(a + b)
+
+// console.log('Eu primeiro...')
+// console.log('Agora eu...')
+// console.log("Sempre vou ser a última...")
+
+
+
+// let calculadora = {
+//   soma: (a, b) => a + b,
+//   subtracao: function(a, b){
+//     return a - b
+//   }
+// }
+// console.log(calculadora.soma(2, 3))
+// console.log(calculadora['subtracao'](5, 2))
 
 //uma concessionária tem CNPJ, endereço e um estoque de veículos contendo 3 veículos. Cada veículo tem modelo, marca e ano de fabricação.
 // const concessionaria = {
