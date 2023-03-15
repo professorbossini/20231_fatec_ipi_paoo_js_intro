@@ -1,3 +1,32 @@
+//reescrever a função calculoRapidinho da seguinte forma:
+// ela deve devolver uma promise construida explicitamente com new
+
+function calculoRapidinho(numero){
+  return new Promise(function(resolve, reject){
+    resolve(numero * (numero + 1) / 2)
+  })
+}
+// function calculoRapidinho(numero){
+//   return Promise.resolve((numero * (numero + 1) / 2))
+// }
+
+const promiseResultante = calculoRapidinho(10)
+promiseResultante.then(res => console.log(res))
+
+//1 + 2 + ... + n - 1 + n
+function calculoDemorado(numero){
+  const p = new Promise(function(resolve, reject){
+    let res = 0
+    for (let i = 1; i <= numero; i++){
+      res += i
+    }
+    resolve(res)
+  })
+  return p
+}
+const minhaPromise = calculoDemorado(10)
+
+minhaPromise.then(res => console.log(res))
 // const fs = require ('fs')
 // const abrirArquivo = function (nomeArquivo){
 //   const exibirConteudo = function(erro, conteudo){
