@@ -1,18 +1,86 @@
-//closure
-function eAgora(){
-  let cont = 1
-  function f1(){
-    console.log(cont)
+let calculadora = {
+  soma: (a, b) => a + b,
+  subtracao: function(a, b){
+    return a - b
   }
-  cont++
-  function f2(){
-    console.log(cont)
-  }
-  return {f1, f2}
 }
-let eAgoraResult = eAgora()
-eAgoraResult.f1()
-eAgoraResult.f2()
+console.log(calculadora.soma(2, 3))
+console.log(calculadora['subtracao'](5, 2))
+
+//uma concessionária tem CNPJ, endereço e um estoque de veículos contendo 3 veículos. Cada veículo tem modelo, marca e ano de fabricação.
+// const concessionaria = {
+//   cnpj: '0001112220001-45',
+//   endereco: {
+//     logradouro: 'Rua C',
+//     numero: 120,
+//     bairro: "Vila J"
+//   },
+//   veiculos: [
+//     {marca: 'VW', modelo: 'Fusca', anoFabricacao: 1976},
+//     {marca: 'VW', modelo: "Brasília", anoFabricacao: 1996},
+//     {marca: 'Jeep', modelo: "Renegade", anoFabricacao: 2019}
+//   ]
+// }
+// for (let veiculo of concessionaria.veiculos){
+//   console.log(veiculo.marca, veiculo.modelo, veiculo.anoFabricacao)
+// }
+// for (let i = 0; i < concessionaria.veiculos.length; i++){
+//   console.log(
+//     concessionaria.veiculos[i].marca,
+//     concessionaria.veiculos[i].modelo,
+//     concessionaria.veiculos[i].anoFabricacao
+//   )
+// }
+// console.log(concessionaria.veiculos[2].modelo)
+
+
+//uma pessoa que se chama Maria, tem 21 anos e mora na rua B, número 121
+//objetos aninhados
+
+// const pessoa = {
+//   nome: "Maria",
+//   idade: 21,
+//   //objeto aninhado
+//   endereco: {
+//     logradouro: "Rua B",
+//     numero: 121
+//   }
+// }
+// console.log(pessoa['endereco'].logradouro)
+// console.log(pessoa['endereco']['logradouro'])
+// console.log(pessoa.endereco.numero)
+// console.log(pessoa.endereco['numero'])
+
+// const pessoa = {
+//   nome: "João",
+//   idade: 17
+// }
+//operador de acesso a membro: .
+// console.log(pessoa.nome)
+// console.log(pessoa["idade"])
+//Ra_do_Aluno, Nome completo
+// 123456, João
+// 57474747, Maria
+// console.log(pessoa.Ra do Aluno)
+// console.log(pessoa["Ra do Aluno"])
+
+// XML
+//JSON JavaScript Object Notation
+//closure
+// function eAgora(){
+//   let cont = 1
+//   function f1(){
+//     console.log(cont)
+//   }
+//   cont++
+//   function f2(){
+//     console.log(cont)
+//   }
+//   return {f1, f2}
+// }
+// let eAgoraResult = eAgora()
+// eAgoraResult.f1()
+// eAgoraResult.f2()
 
 
 //Olá, Pedro
